@@ -7,8 +7,13 @@ export class LoadingState extends Phaser.State {
         this.load.setPreloadSprite(loader);
 
         this.load.image('player', 'assets/images/player.png');
+        this.load.image('coin', 'assets/images/coin.png');
         this.load.image('background', 'assets/images/background.png');
         this.load.tilemap('example-map', 'assets/maps/example-map.json', null, Phaser.Tilemap.TILED_JSON);
+
+        this.game.scale.maxWidth = 800;
+        this.game.scale.maxHeight = 600;
+        this.game.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;
     }
 
     create() {

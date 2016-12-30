@@ -1,6 +1,6 @@
 export default {
-    WIDTH: 800,
-    HEIGHT: 480,
+    WIDTH: 400,
+    HEIGHT: 240,
 
-    GRAVITY: 200
+    GRAVITY: 300
 };
